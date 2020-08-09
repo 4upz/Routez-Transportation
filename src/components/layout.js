@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./Header/header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -20,12 +20,22 @@ const Layout = ({ children }) => {
           title
         }
       }
+      logo: file(relativePath: { eq: "RTlogo.png" }) {
+        childImageSharp {
+          fixed(width: 75) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        logo={data.logo.childImageSharp.fixed}
+      />
       <div
         style={{
           margin: `0 auto`,
