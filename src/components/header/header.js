@@ -38,8 +38,8 @@ const Header = ({ siteTitle, logo }) => (
           </li>
         </ul>
       </nav>
-      <div className={styles.socialContainer}>
-        <ul className={styles.socialMedia}>
+      <div className={styles.socialList}>
+        <ul>
           <li className={styles.socialItem}>
             <Link to="/" className={styles.socialLink}>
               <FontAwesomeIcon
