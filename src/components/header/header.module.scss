@@ -8,64 +8,50 @@
   * {
     display: inline;
   }
-  ul {
-    margin: 0;
+}
+
+.headerContainer {
+  margin: 0 auto;
+  max-width: 1920px;
+  // padding: 1.45rem 1.0875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoLink {
+  color: $black;
+  text-decoration: none;
+}
+
+.logo {
+  margin: 0;
+  text-align: center;
+}
+
+.navBar {
+  text-align: center;
+  .navList {
+    list-style-type: disc;
   }
+}
 
-  .headerContainer {
-    margin: 0 auto;
-    max-width: 1920px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+.navItem {
+  margin: 42px;
 
-    .logo {
-      margin: 0;
-      text-align: center;
-
-      .logoLink {
-        color: $black;
-        text-decoration: none;
-      }
-    }
-
-    .navBar {
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      .navList {
-        list-style-type: disc;
-
-        .navItem {
-          margin: 42px;
-
-          .navLink {
-            color: $black;
-            text-decoration: none;
-            font-size: 20px;
-            &:hover {
-              transition: 0.2s;
-              color: $gold;
-            }
-          }
-        }
-      }
-    }
-
-    .socialList {
-      .socialItem {
-        margin: 24px;
-
-        .socialLink {
-          font-size: 40px;
-          color: $gold;
-        }
-      }
-    }
+  .navLink {
+    color: $black;
+    text-decoration: none;
+    font-size: 20px;
   }
+}
+
+.socialItem {
+  margin: 24px;
+}
+
+.socialLink {
+  font-size: 40px;
+  color: $gold;
 }

@@ -67,3 +67,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# Merge Conflicts
+src/components/Header/header.js
+src/components/header/Header.module.scss
