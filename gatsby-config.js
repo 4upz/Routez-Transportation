@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Routez`,
+    title: `Routez Transportation`,
     description: `Routez Transportation Service - A Black-owned transportation business located in Clevelad, Ohio.`,
     author: `@the4upz`,
   },
@@ -27,7 +27,7 @@ module.exports = {
         background_color: `#f4f7f5`,
         theme_color: `#ffd522`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/RTlogo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

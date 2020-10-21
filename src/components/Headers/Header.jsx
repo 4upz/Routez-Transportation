@@ -9,63 +9,89 @@ import {
   faFacebook,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
-import styles from "./header.module.scss"
+import { Box, Flex, Link as ExternalLink } from "@chakra-ui/core"
 
-const Header = ({ siteTitle, logo }) => (
-  <header className={styles.header}>
-    <div className={styles.headerContainer}>
-      <h1 className={styles.logo}>
-        <Link to="/" className={styles.logoLink}>
+/* *** TODO: Split up component and fix mobile stylings *** */
+const MobileToggle = ({ onClick }) => (
+  <Box display={{ base: "block", md: "none" }} onClick={onClick}>
+    <svg
+      fill="white"
+      width="20px"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>Menu</title>
+      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+    </svg>
+  </Box>
+)
+
+const HeaderNav = ({ show, children }) => (
+  <Flex
+    as="nav"
+    display={{ sm: show ? "block" : "none", md: "flex" }}
+    justifySelf="center"
+    justifyContent="space-between"
+    fontSize={18}
+    w={{ sm: "full", md: "30%" }}
+    alignItems="center"
+  >
+    {children}
+  </Flex>
+)
+
+const SocialLinks = ({ show }) => (
+  <Flex
+    display={{ sm: show ? "block" : "none", md: "flex" }}
+    w="10%"
+    justifyContent="space-between"
+    fontSize="1.5rem"
+  >
+    <ExternalLink href="https://www.instagram.com/">
+      <FontAwesomeIcon icon={faInstagram} />
+    </ExternalLink>
+    <ExternalLink href="https://www.facebook.com/">
+      <FontAwesomeIcon icon={faFacebook} />
+    </ExternalLink>
+    <ExternalLink href="https://www.twitter.com/">
+      <FontAwesomeIcon icon={faTwitter} />
+    </ExternalLink>
+  </Flex>
+)
+
+const Header = ({ siteTitle, logo }) => {
+  const [show, setShow] = React.useState(false)
+  const handleToggle = () => setShow(!show)
+
+  return (
+    <Flex
+      as="header"
+      align="center"
+      justify="space-between"
+      padding="1.5rem"
+      mx="auto"
+      px="3rem"
+      maxW="1920px"
+      className="header-nav"
+    >
+      <Box align="center">
+        <Link to="/">
           <Img fixed={logo} alt={siteTitle} />
         </Link>
-      </h1>
-      <nav className={styles.navBar}>
-        <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <Link to="/" className={styles.navLink}>
-              About Us
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link to="/" className={styles.navLink}>
-              Our Services
-            </Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link to="/" className={styles.navLink}>
-              Contact Us
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <div className={styles.socialList}>
-        <ul>
-          <li className={styles.socialItem}>
-            <Link to="/" className={styles.socialLink}>
-              <FontAwesomeIcon
-                className={styles.socialIcon}
-                icon={faInstagram}
-              />
-            </Link>
-          </li>
-          <li className={styles.socialItem}>
-            <Link to="/" className={styles.socialLink}>
-              <FontAwesomeIcon
-                className={styles.socialIcon}
-                icon={faFacebook}
-              />
-            </Link>
-          </li>
-          <li className={styles.socialItem}>
-            <Link to="/" className={styles.socialLink}>
-              <FontAwesomeIcon className={styles.socialIcon} icon={faTwitter} />
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-)
+      </Box>
+
+      <MobileToggle onClick={handleToggle} />
+
+      <HeaderNav show={show}>
+        <Link to="/">About Us</Link>
+        <Link to="/">Our Services</Link>
+        <Link to="/">Contact Us</Link>
+      </HeaderNav>
+
+      <SocialLinks show={show} />
+    </Flex>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
