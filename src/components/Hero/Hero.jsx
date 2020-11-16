@@ -33,7 +33,7 @@ const Hero = ({ businessNumber }) => {
           </Heading>
         </Stack>
         <Stack isInline>
-          <Button variantColor="brand">Why Us?</Button>
+          <Button colorScheme="brand">Why Us?</Button>
           <Button>Get In Touch</Button>
         </Stack>
         <Text>To Book a Ride: {businessNumber}</Text>

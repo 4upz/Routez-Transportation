@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
         </Text>
         Built with
         {` `}
-        <Link href="https://www.gatsbyjs.org">Gatsby</Link>
+        <Link to="https://www.gatsbyjs.org">Gatsby</Link>
       </Box>
     </ChakraProvider>
   )
