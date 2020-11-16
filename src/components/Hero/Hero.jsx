@@ -36,7 +36,8 @@ const Hero = ({ businessNumber }) => {
           <Button colorScheme="brand">Why Us?</Button>
           <Button>Get In Touch</Button>
         </Stack>
-        <Text>To Book a Ride: {businessNumber}</Text>
+        {/* Commenting until final booking number is provided */}
+        {/* <Text>To Book a Ride: {businessNumber}</Text> */}
       </Stack>
 
       <Image
