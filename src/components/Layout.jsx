@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { customTheme } from "../util/theme"
 import { ChakraProvider, Box, Text } from "@chakra-ui/react"
 import Header from "./Headers/Header"
@@ -43,9 +43,6 @@ const Layout = ({ children }) => {
         <Text>
           Copyright © {new Date().getFullYear()} Routez Transportation
         </Text>
-        Built with
-        {` `}
-        <Link to="https://www.gatsbyjs.org">Gatsby</Link>
       </Box>
     </ChakraProvider>
   )

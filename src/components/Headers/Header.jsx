@@ -71,7 +71,7 @@ const Header = ({ siteTitle, logo }) => {
       padding="1.5rem"
       mx="auto"
       px="3rem"
-      maxW="1920px"
+      maxW="1200px"
       className="header-nav"
     >
       <Box align="center">

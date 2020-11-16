@@ -18,12 +18,12 @@ const Hero = ({ businessNumber }) => {
       justifyContent="center"
       alignItems="center"
       px={8}
-      my={16}
+      // my={8}
       mx="auto"
       minH="80vh"
-      maxW="1600px"
+      maxW="1200px"
     >
-      <Stack w={{ base: "full", md: "50%" }} spacing={8}>
+      <Stack spacing={8}>
         <Stack>
           <Heading as="h2" size="md" fontWeight="normal">
             Anytime. Any day.
@@ -39,7 +39,11 @@ const Hero = ({ businessNumber }) => {
         <Text>To Book a Ride: {businessNumber}</Text>
       </Stack>
 
-      <Image src={heroImage} alt="Routez Transportation" />
+      <Image
+        maxW={{ base: "full", md: "60%" }}
+        src={heroImage}
+        alt="Routez Transportation"
+      />
     </Flex>
   )
 }
