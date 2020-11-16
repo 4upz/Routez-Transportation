@@ -9,7 +9,7 @@ import {
   faFacebook,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
-import { Box, Flex, Link as ExternalLink } from "@chakra-ui/core"
+import { Box, Flex, Link as ExternalLink } from "@chakra-ui/react"
 
 /* *** TODO: Split up component and fix mobile stylings *** */
 const MobileToggle = ({ onClick }) => (

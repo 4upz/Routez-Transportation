@@ -1,15 +1,8 @@
-import { theme } from "@chakra-ui/core"
+import { extendTheme } from "@chakra-ui/react"
 
 // Custom theme settings
-export const customTheme = {
-  ...theme,
-  fonts: {
-    heading: '"Roboto", "Avenir Next", sans-serif',
-    body: '"Roboto", "system-ui, sans-serif"',
-    mono: "Menlo, monospace",
-  },
+export const customTheme = extendTheme({
   colors: {
-    ...theme.colors,
     whiteIsh: "#f4f7f5",
     brand: {
       50: "#fffada",
@@ -24,4 +17,9 @@ export const customTheme = {
       900: "#1c1500",
     },
   },
-}
+  font: {
+    heading: '"Roboto", "Avenir Next", sans-serif',
+    body: '"Roboto", "system-ui, sans-serif"',
+    mono: "Menlo, monospace",
+  },
+})

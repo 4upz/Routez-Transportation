@@ -2,6 +2,7 @@ $gold: #ffd522;
 
 .header-nav a {
   transition: 0.2s all ease;
+  font-weight: bold;
   &:hover {
     color: $gold;
   }

@@ -5,8 +5,6 @@ module.exports = {
     author: `@the4upz`,
   },
   plugins: [
-    `gatsby-plugin-chakra-ui`,
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {

@@ -9,13 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { customTheme } from "../util/theme"
-import {
-  ThemeProvider,
-  CSSReset,
-  ColorModeProvider,
-  Box,
-  Text,
-} from "@chakra-ui/core"
+import { ChakraProvider, Box, Text } from "@chakra-ui/react"
 import Header from "./Headers/Header"
 import "./custom-styles.scss"
 
@@ -38,25 +32,22 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <ThemeProvider theme={customTheme}>
+    <ChakraProvider theme={customTheme}>
       {/* TODO: Use ColorModeProvider to incorporate theme switcher */}
-      <ColorModeProvider>
-        <CSSReset />
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          logo={data.logo.childImageSharp.fixed}
-        />
-        <main>{children}</main>
-        <Box as="footer" mx="auto" textAlign="center">
-          <Text>
-            Copyright © {new Date().getFullYear()} Routez Transportation
-          </Text>
-          Built with
-          {` `}
-          <Link href="https://www.gatsbyjs.org">Gatsby</Link>
-        </Box>
-      </ColorModeProvider>
-    </ThemeProvider>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        logo={data.logo.childImageSharp.fixed}
+      />
+      <main>{children}</main>
+      <Box as="footer" mx="auto" textAlign="center">
+        <Text>
+          Copyright © {new Date().getFullYear()} Routez Transportation
+        </Text>
+        Built with
+        {` `}
+        <Link href="https://www.gatsbyjs.org">Gatsby</Link>
+      </Box>
+    </ChakraProvider>
   )
 }
 

@@ -1,6 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Box, Flex, Stack, Heading, Button, Image, Text } from "@chakra-ui/core"
+import {
+  Box,
+  Flex,
+  Stack,
+  Heading,
+  Button,
+  Image,
+  Text,
+} from "@chakra-ui/react"
 import heroImage from "../../images/art/hero-image.svg"
 
 const Hero = ({ businessNumber }) => {
@@ -18,10 +26,10 @@ const Hero = ({ businessNumber }) => {
       <Stack w={{ base: "full", md: "50%" }} spacing={8}>
         <Stack>
           <Heading as="h2" size="md" fontWeight="normal">
-            Some Supporting Slogan
+            Anytime. Any day.
           </Heading>
           <Heading as="h1" size="2xl">
-            Some Sexy, Engaging Slogan
+            We'll take you there!
           </Heading>
         </Stack>
         <Stack isInline>
