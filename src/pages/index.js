@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 import Hero from "../components/Hero/Hero"
@@ -8,7 +7,7 @@ import SEO from "../components/Seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero businessNumber="216-xxx-xxxx" />
+    <Hero businessNumber="216-XXX-XXX" />
     {/* <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

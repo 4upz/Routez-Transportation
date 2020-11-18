@@ -7,3 +7,21 @@ $gold: #ffd522;
     color: $gold;
   }
 }
+
+.secondary-button,
+.primary-button {
+  transition: 0.2s all ease;
+  border: 1px solid transparent;
+}
+
+.primary-button:hover {
+  background-color: white !important;
+  border: 1px solid $gold !important;
+  color: $gold;
+}
+
+.secondary-button:hover {
+  background-color: white !important;
+  border-color: black !important;
+  color: black;
+}
