@@ -37,7 +37,7 @@ const Hero = ({ businessNumber }) => {
           <Button>Get In Touch</Button>
         </Stack>
         {/* Commenting until final booking number is provided */}
-        {/* <Text>To Book a Ride: {businessNumber}</Text> */}
+        <Text>To Book a Ride: {businessNumber}</Text>
       </Stack>
 
       <Image
