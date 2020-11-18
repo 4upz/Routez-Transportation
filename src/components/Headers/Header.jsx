@@ -18,10 +18,9 @@ const Header = ({ siteTitle, logo }) => {
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={8}
-      px={16}
-      py={8}
-      maxW={1920}
+      px={6}
+      pt={6}
+      maxW={1200}
       mx="auto"
       bg={["brand.500", "brand.500", "transparent", "transparent"]}
       color="black"

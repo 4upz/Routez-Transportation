@@ -1,5 +1,9 @@
 $gold: #ffd522;
 
+body {
+  background-color: #f4f7f5;
+}
+
 .header-nav a {
   transition: 0.2s all ease;
   font-weight: bold;
@@ -24,4 +28,32 @@ $gold: #ffd522;
   background-color: white !important;
   border-color: black !important;
   color: black;
+}
+
+.reason-card {
+  transition: 0.2s ease all;
+  cursor: pointer;
+
+  .content {
+    transition: 0.2s ease all;
+  }
+
+  &:hover {
+    box-shadow: 12px 12px 2px 1px rgba(black, 0.2);
+    transform: scale(1.05);
+
+    .content {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px); /* Chrome, Safari, Opera */
+    }
+  }
+}
+
+.social-links {
+  a {
+    transition: 0.2s ease;
+    &:hover {
+      color: white;
+    }
+  }
 }

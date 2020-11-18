@@ -9,9 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { customTheme } from "../util/theme"
-import { ChakraProvider, Box, Text } from "@chakra-ui/react"
+import { ChakraProvider } from "@chakra-ui/react"
 import Header from "./Headers/Header"
 import "./custom-styles.scss"
+import Footer from "./Footer/Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
       }
       logo: file(relativePath: { eq: "RTlogo.png" }) {
         childImageSharp {
-          fixed(width: 70, height: 75, quality: 100) {
+          fixed(width: 93, height: 100, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -39,11 +40,7 @@ const Layout = ({ children }) => {
         logo={data.logo.childImageSharp.fixed}
       />
       <main>{children}</main>
-      <Box as="footer" mx="auto" textAlign="center">
-        <Text>
-          Copyright © {new Date().getFullYear()} Routez Transportation
-        </Text>
-      </Box>
+      <Footer />
     </ChakraProvider>
   )
 }

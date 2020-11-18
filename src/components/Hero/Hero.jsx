@@ -11,14 +11,14 @@ const Hero = ({ businessNumber }) => {
       alignContent="center"
       alignItems="center"
       wrap="no-wrap"
-      px={16}
+      px={6}
       mx="auto"
-      minH={["80vh", "90vh"]}
-      maxW={1920}
+      minH="90vh"
+      maxW={1200}
     >
       <Stack
         spacing={8}
-        w={{ base: "full", md: "30%" }}
+        w={{ base: "full", md: "40%" }}
         align={["center", "center", "flex-start", "flex-start"]}
       >
         <Stack>
@@ -27,6 +27,7 @@ const Hero = ({ businessNumber }) => {
             size="md"
             fontWeight="normal"
             textAlign={["center", "center", "left", "left"]}
+            color="gray.600"
           >
             Anytime. Any day.
           </Heading>
@@ -58,7 +59,7 @@ const Hero = ({ businessNumber }) => {
         </Stack>
         <Link
           fontSize={21}
-          color="gray.500"
+          color="gray.600"
           href={`tel:${businessNumber}`}
           textAlign={["center", "center", "left", "left"]}
         >
