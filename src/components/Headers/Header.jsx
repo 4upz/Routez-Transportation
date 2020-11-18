@@ -19,9 +19,12 @@ const Header = ({ siteTitle, logo }) => {
       wrap="wrap"
       w="100%"
       mb={8}
-      p={8}
+      px={16}
+      py={8}
+      maxW={1920}
+      mx="auto"
       bg={["brand.500", "brand.500", "transparent", "transparent"]}
-      color={["white", "white", "black", "black"]}
+      color="black"
       className="header-nav"
     >
       <Flex align="center">
@@ -37,7 +40,7 @@ const Header = ({ siteTitle, logo }) => {
         <HeaderNavItem to="/" isLast>
           <Button
             size="md"
-            color={["black", "black", "white", "white"]}
+            color="black"
             bg={["white", "white", "brand.500", "brand.500"]}
             _hover={{
               bg: ["brand.100", "brand.100", "brand.600", "brand.600"],

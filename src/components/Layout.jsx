@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
       }
       logo: file(relativePath: { eq: "RTlogo.png" }) {
         childImageSharp {
-          fixed(width: 75) {
+          fixed(width: 70, height: 75, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }

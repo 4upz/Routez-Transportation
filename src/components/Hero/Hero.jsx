@@ -1,29 +1,26 @@
 import React from "react"
 import PropTypes from "prop-types"
-import {
-  Flex,
-  Container,
-  Stack,
-  Heading,
-  Button,
-  Image,
-  Link,
-} from "@chakra-ui/react"
+import { Flex, Stack, Heading, Button, Image, Link } from "@chakra-ui/react"
 import heroImage from "../../images/art/hero-image.svg"
 
 const Hero = ({ businessNumber }) => {
   return (
     <Flex
       flexDir={{ base: "column-reverse", md: "row" }}
-      justifyContent="center"
+      justify={{ base: "center", md: "space-around", xl: "space-between" }}
       alignContent="center"
       alignItems="center"
-      px={8}
+      wrap="no-wrap"
+      px={16}
       mx="auto"
-      minH="90vh"
-      // maxW={1200}
+      minH={["80vh", "90vh"]}
+      maxW={1920}
     >
-      <Stack spacing={8}>
+      <Stack
+        spacing={8}
+        w={{ base: "full", md: "30%" }}
+        align={["center", "center", "flex-start", "flex-start"]}
+      >
         <Stack>
           <Heading
             as="h2"
@@ -65,11 +62,11 @@ const Hero = ({ businessNumber }) => {
           href={`tel:${businessNumber}`}
           textAlign={["center", "center", "left", "left"]}
         >
-          To Book a Ride: {businessNumber}
+          Book a Ride: {businessNumber}
         </Link>
       </Stack>
       <Image
-        maxW={{ base: "full", md: "70%" }}
+        w={{ base: "full", md: "60%" }}
         src={heroImage}
         alt="Routez Transportation"
       />
