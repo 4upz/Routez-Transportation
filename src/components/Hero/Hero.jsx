@@ -54,12 +54,14 @@ const Hero = ({ businessNumber }) => {
               Why Us?
             </Button>
             <Button
+              as={GatsbyLink}
               backgroundColor="black"
               color="white"
               className="secondary-button"
               size="lg"
+              to="/contact"
             >
-              <GatsbyLink to="/contact">Get In Touch</GatsbyLink>
+              Get In Touch
             </Button>
           </Stack>
           <Link
@@ -71,11 +73,6 @@ const Hero = ({ businessNumber }) => {
             Book a Ride: {businessNumber}
           </Link>
         </Stack>
-        {/* <Image
-          w={{ base: "full", md: "60%" }}
-          src={heroImage}
-          alt="Routez Transportation"
-        /> */}
       </Flex>
     </Box>
   )

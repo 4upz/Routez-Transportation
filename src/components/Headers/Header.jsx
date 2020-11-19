@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+import { Link as GatsbyLink } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
@@ -28,16 +28,16 @@ const Header = ({ siteTitle, logo }) => {
       className="header-nav"
     >
       <Flex align="center">
-        <Link to="/">
+        <GatsbyLink to="/">
           <Img fixed={logo} alt={siteTitle} />
-        </Link>
+        </GatsbyLink>
       </Flex>
       <Spacer />
       <MobileToggle onClick={toggleMenu} />
       <HeaderNav shouldShow={show}>
         <HeaderNavItem to="/">About Us</HeaderNavItem>
         <HeaderNavItem to="/">Our Services</HeaderNavItem>
-        <HeaderNavItem to="/" isLast>
+        <HeaderNavItem to="/contact" isLast>
           <Button
             size="md"
             color="black"
