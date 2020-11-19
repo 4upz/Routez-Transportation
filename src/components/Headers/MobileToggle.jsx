@@ -5,7 +5,7 @@ const MobileToggle = ({ onClick }) => (
   <Box display={{ base: "block", md: "none" }} onClick={onClick}>
     <svg
       fill="black"
-      width="20px"
+      width="30px"
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
     >

@@ -1,33 +1,29 @@
 import React from "react"
 import { Link as GatsbyLink } from "gatsby"
-import {
-  Flex,
-  Stack,
-  Heading,
-  Button,
-  Image,
-  Link,
-  Box,
-} from "@chakra-ui/react"
+import { Flex, Stack, Heading, Button, Link, Box } from "@chakra-ui/react"
 import heroImage from "../../images/art/hero-image.svg"
 
 const Hero = ({ businessNumber }) => {
   return (
     <Box className="home-hero">
       <Flex
-        flexDir={{ base: "column-reverse", md: "row" }}
-        justify={{ base: "center", md: "space-around", xl: "space-between" }}
-        alignContent="center"
-        alignItems="center"
+        justify={{ base: "center", md: "space-between" }}
+        align={{ base: "flex-end", md: "center" }}
         wrap="no-wrap"
         px={6}
         mx="auto"
-        minH="90vh"
+        minH={{ base: "none", md: "90vh" }}
         maxW={1200}
+        bg={`url(${heroImage})`}
+        bgPos={{ base: "center top", md: "center right" }}
+        bgRepeat="no-repeat"
+        bgSize={{ base: "300px 300px", md: "initial" }}
       >
         <Stack
           spacing={8}
-          w={{ base: "full", md: "40%" }}
+          mt={{ base: "300px", md: 0 }}
+          mb={6}
+          w={{ base: "full", lg: "40%" }}
           align={["center", "center", "flex-start", "flex-start"]}
         >
           <Stack>
@@ -75,11 +71,11 @@ const Hero = ({ businessNumber }) => {
             Book a Ride: {businessNumber}
           </Link>
         </Stack>
-        <Image
+        {/* <Image
           w={{ base: "full", md: "60%" }}
           src={heroImage}
           alt="Routez Transportation"
-        />
+        /> */}
       </Flex>
     </Box>
   )

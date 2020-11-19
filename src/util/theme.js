@@ -3,8 +3,8 @@ import { extendTheme } from "@chakra-ui/react"
 // Custom theme settings
 export const customTheme = extendTheme({
   fonts: {
-    body: "Roboto, system-ui, sans-serif",
-    heading: "Roboto, serif",
+    body: "Roboto, sans-serif",
+    heading: "Roboto, sans-serif",
     mono: "Menlo, monospace",
   },
   colors: {
