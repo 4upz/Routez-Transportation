@@ -20,9 +20,10 @@ const Header = ({ siteTitle, logo }) => {
       w="100%"
       px={6}
       pt={6}
+      pb={{ base: 6, md: 0 }}
       maxW={1200}
       mx="auto"
-      bg={["brand.500", "brand.500", "transparent", "transparent"]}
+      bg="transparent"
       color="black"
       className="header-nav"
     >

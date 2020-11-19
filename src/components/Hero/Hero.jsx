@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
+import { Link as GatsbyLink } from "gatsby"
 import {
   Flex,
   Stack,
@@ -63,7 +63,7 @@ const Hero = ({ businessNumber }) => {
               className="secondary-button"
               size="lg"
             >
-              Get In Touch
+              <GatsbyLink to="/contact">Get In Touch</GatsbyLink>
             </Button>
           </Stack>
           <Link
@@ -83,10 +83,6 @@ const Hero = ({ businessNumber }) => {
       </Flex>
     </Box>
   )
-}
-
-Hero.propTypes = {
-  image: PropTypes.any,
 }
 
 export default Hero
