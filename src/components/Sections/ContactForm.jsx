@@ -53,7 +53,7 @@ const ContactForm = ({ businessNumber }) => (
         data-netlify="true"
       >
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="Contact Form" value="Contact Form" />
         <Flex
           flexDir={{ base: "column", md: "row" }}
           flexWrap={{ base: "nowrap", md: "wrap" }}
