@@ -68,28 +68,28 @@ const ContactForm = ({ businessNumber }) => (
             md: "none",
           }}
         >
-          {/* Hopefully a cheap workaround to the Netlify field name issue */}
-          <FormControl type="hidden" id="dummy">
-            <Input type="hidden" borderColor="brand.500" name="dummmy" />
-          </FormControl>
-
-          <FormControl id="name" my={3} isRequired>
-            <FormLabel>Name</FormLabel>
+          <FormControl id="full-name" my={3} isRequired>
+            <FormLabel>Full Name</FormLabel>
             <Input
               borderColor="brand.500"
               placeholder="Full Name"
-              name="name"
+              name="full-name"
             />
           </FormControl>
           <FormControl id="email" my={3} isRequired>
             <FormLabel>Email</FormLabel>
-            <Input borderColor="brand.500" placeholder="Email" name="email" />
+            <Input
+              type="email"
+              borderColor="brand.500"
+              placeholder="Email"
+              name="email"
+            />
           </FormControl>
           <FormControl id="message" my={3} isRequired>
             <FormLabel>Message</FormLabel>
             <Textarea
               borderColor="brand.500"
-              placeholder="The message you want to send"
+              placeholder="The message you want to send."
               name="message"
             />
           </FormControl>
