@@ -24,7 +24,12 @@ const AboutUs = ({ aboutText }) => {
             alt="RoutezTransportation"
           />
         </Box>
-        <Divider className="divider" borderColor="brand.500" borderWidth={2} />
+        <Divider
+          className="divider"
+          borderColor="brand.500"
+          borderWidth={2}
+          bg="brand.500"
+        />
         <Heading>Why Choose Us?</Heading>
         <Text textAlign="left" px={6} fontSize={18} lineHeight={24}>
           {aboutText}
