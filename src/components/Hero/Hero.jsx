@@ -46,10 +46,12 @@ const Hero = ({ businessNumber }) => {
           </Stack>
           <Stack isInline>
             <Button
+              as={GatsbyLink}
               colorScheme="brand"
               color="black"
               className="primary-button"
               size="lg"
+              to="/about"
             >
               Why Us?
             </Button>
