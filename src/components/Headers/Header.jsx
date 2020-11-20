@@ -35,7 +35,7 @@ const Header = ({ siteTitle, logo }) => {
       <Spacer />
       <MobileToggle onClick={toggleMenu} />
       <HeaderNav shouldShow={show}>
-        <HeaderNavItem to="/">About Us</HeaderNavItem>
+        <HeaderNavItem to="/about">About Us</HeaderNavItem>
         <HeaderNavItem to="/">Our Services</HeaderNavItem>
         <HeaderNavItem to="/contact" isLast>
           <Button

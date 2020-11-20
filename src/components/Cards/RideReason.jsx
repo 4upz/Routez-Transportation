@@ -1,8 +1,10 @@
 import React from "react"
-import { Box, Flex, Heading } from "@chakra-ui/react"
+import { Box, Center, Heading } from "@chakra-ui/react"
+import { Link as GatsbyLink } from "gatsby"
 
 const RideReason = ({ reason, bgImage }) => (
   <Box
+    as={GatsbyLink}
     className="reason-card"
     m={6}
     borderRadius="lg"
@@ -11,19 +13,13 @@ const RideReason = ({ reason, bgImage }) => (
     bgSize="cover"
     bgPos="center center"
     boxSize={{ base: "300px", md: "400px" }}
+    to="/about"
   >
-    <Flex
-      className="content"
-      h="100%"
-      w="100%"
-      justify="center"
-      align="center"
-      borderRadius="lg"
-    >
+    <Center className="content" h="100%" w="100%" borderRadius="lg">
       <Heading as="h2" color="white">
         {reason}
       </Heading>
-    </Flex>
+    </Center>
   </Box>
 )
 

@@ -22,7 +22,7 @@ const ContactForm = ({ businessNumber }) => (
     my={6}
     px={6}
     py={6}
-    minH="70vh"
+    minH={{ base: "none", lg: "80vh" }}
     bg={`url(${backgroundImage})`}
     bgRepeat="no-repeat"
     bgPos="center left"
