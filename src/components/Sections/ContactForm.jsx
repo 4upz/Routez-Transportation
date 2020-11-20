@@ -68,7 +68,7 @@ const ContactForm = ({ businessNumber }) => (
             md: "none",
           }}
         >
-          <FormControl id="full-name" my={3} isRequired>
+          <FormControl id="full-name" my={3}>
             <FormLabel>Full Name</FormLabel>
             <Input
               borderColor="brand.500"
@@ -76,7 +76,7 @@ const ContactForm = ({ businessNumber }) => (
               name="full-name"
             />
           </FormControl>
-          <FormControl id="email" my={3} isRequired>
+          <FormControl id="email" my={3}>
             <FormLabel>Email</FormLabel>
             <Input
               type="email"
@@ -85,7 +85,7 @@ const ContactForm = ({ businessNumber }) => (
               name="email"
             />
           </FormControl>
-          <FormControl id="message" my={3} isRequired>
+          <FormControl id="message" my={3}>
             <FormLabel>Message</FormLabel>
             <Textarea
               borderColor="brand.500"
