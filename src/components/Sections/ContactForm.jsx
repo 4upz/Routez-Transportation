@@ -74,6 +74,7 @@ const ContactForm = ({ businessNumber }) => (
               borderColor="brand.500"
               placeholder="Full Name"
               name="full-name"
+              required
             />
           </FormControl>
           <FormControl id="email" my={3}>
@@ -83,6 +84,7 @@ const ContactForm = ({ businessNumber }) => (
               borderColor="brand.500"
               placeholder="Email"
               name="email"
+              required
             />
           </FormControl>
           <FormControl id="message" my={3}>
@@ -91,6 +93,7 @@ const ContactForm = ({ businessNumber }) => (
               borderColor="brand.500"
               placeholder="The message you want to send."
               name="message"
+              required
             />
           </FormControl>
           <Button
