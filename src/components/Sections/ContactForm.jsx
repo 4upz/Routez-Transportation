@@ -21,8 +21,8 @@ const ContactForm = ({ businessNumber }) => (
     mx="auto"
     my={6}
     px={6}
-    pb={6}
-    minH="60vh"
+    py={6}
+    minH="70vh"
     bg={`url(${backgroundImage})`}
     bgRepeat="no-repeat"
     bgPos="center left"
@@ -31,7 +31,7 @@ const ContactForm = ({ businessNumber }) => (
       <Heading as="h1">Get in Touch</Heading>
       <Box
         as={Link}
-        p={1}
+        p={2}
         bg="brand.300"
         borderWidth={1}
         borderColor="black"
@@ -52,7 +52,6 @@ const ContactForm = ({ businessNumber }) => (
         method="post"
         data-netlify="true"
         netlify-honeypot="bot-field"
-        onSubmit="submit"
       >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="Contact Form" />
@@ -63,32 +62,18 @@ const ContactForm = ({ businessNumber }) => (
           align="center"
           p={{ base: 6, md: 0 }}
           borderRadius="lg"
-          bg={{ base: "rgba(255, 213, 34, 0.4)", md: "transparent" }}
+          bg={{ base: "rgba(255, 255, 255, 0.9)", md: "transparent" }}
+          shadow={{
+            base: "3px 3px 6px 0px rgba(0, 0, 0, 0.15)",
+            md: "none",
+          }}
         >
-          <FormControl
-            id="first-name"
-            w={{ base: "full", md: "45%" }}
-            my={3}
-            isRequired
-          >
-            <FormLabel>First Name</FormLabel>
+          <FormControl id="name" my={3} isRequired>
+            <FormLabel>Name</FormLabel>
             <Input
               borderColor="brand.500"
-              placeholder="First Name"
-              name="first-name"
-            />
-          </FormControl>
-          <FormControl
-            id="last-name"
-            w={{ base: "full", md: "45%" }}
-            my={3}
-            isRequired
-          >
-            <FormLabel>Last Name</FormLabel>
-            <Input
-              borderColor="brand.500"
-              placeholder="Last Name"
-              name="last-name"
+              placeholder="Full Name"
+              name="name"
             />
           </FormControl>
           <FormControl id="email" my={3} isRequired>
