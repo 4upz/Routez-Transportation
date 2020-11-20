@@ -18,15 +18,17 @@ const AboutUs = ({ aboutText }) => {
   return (
     <Box maxW={1200} mx="auto" my={6}>
       <Stack textAlign="center" spacing={6}>
-        <Box mx="auto">
+        <Box mx="auto" my={6}>
           <Img
             fixed={data.logo.childImageSharp.fixed}
             alt="RoutezTransportation"
           />
         </Box>
-        <Divider borderColor="brand.500" borderWidth={2} />
+        <Divider className="divider" borderColor="brand.500" borderWidth={2} />
         <Heading>Why Choose Us?</Heading>
-        <Text textAlign="left">{aboutText}</Text>
+        <Text textAlign="left" px={6}>
+          {aboutText}
+        </Text>
       </Stack>
     </Box>
   )
