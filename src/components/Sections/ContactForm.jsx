@@ -49,11 +49,13 @@ const ContactForm = ({ businessNumber }) => (
         w={{ base: "100%", md: "unset" }}
         textAlign={{ base: "center", md: "left" }}
         name="Contact Form"
-        method="POST"
+        method="post"
         data-netlify="true"
+        netlify-honeypot="bot-field"
+        onSubmit="submit"
       >
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="Contact Form" value="Contact Form" />
+        <input type="hidden" name="form-name" value="Contact Form" />
         <Flex
           flexDir={{ base: "column", md: "row" }}
           flexWrap={{ base: "nowrap", md: "wrap" }}
@@ -73,7 +75,7 @@ const ContactForm = ({ businessNumber }) => (
             <Input
               borderColor="brand.500"
               placeholder="First Name"
-              name="First Name"
+              name="first-name"
             />
           </FormControl>
           <FormControl
@@ -86,19 +88,19 @@ const ContactForm = ({ businessNumber }) => (
             <Input
               borderColor="brand.500"
               placeholder="Last Name"
-              name="Last Name"
+              name="last-name"
             />
           </FormControl>
           <FormControl id="email" my={3} isRequired>
             <FormLabel>Email</FormLabel>
-            <Input borderColor="brand.500" placeholder="Email" name="Email" />
+            <Input borderColor="brand.500" placeholder="Email" name="email" />
           </FormControl>
           <FormControl id="message" my={3} isRequired>
             <FormLabel>Message</FormLabel>
             <Textarea
               borderColor="brand.500"
               placeholder="The message you want to send"
-              name="Message"
+              name="message"
             />
           </FormControl>
           <Button
