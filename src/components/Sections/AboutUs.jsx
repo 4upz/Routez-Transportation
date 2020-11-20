@@ -31,7 +31,7 @@ const AboutUs = ({ aboutText }) => {
           bg="brand.500"
         />
         <Heading>Why Choose Us?</Heading>
-        <Text textAlign="left" px={6} fontSize={18} lineHeight={24}>
+        <Text textAlign="left" px={6} fontSize={18} lineHeight="24px">
           {aboutText}
         </Text>
       </Stack>
