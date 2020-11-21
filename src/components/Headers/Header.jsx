@@ -36,7 +36,7 @@ const Header = ({ siteTitle, logo }) => {
       <MobileToggle onClick={toggleMenu} />
       <HeaderNav shouldShow={show}>
         <HeaderNavItem to="/about">About Us</HeaderNavItem>
-        <HeaderNavItem to="/">Our Services</HeaderNavItem>
+        <HeaderNavItem to="/services">Our Services</HeaderNavItem>
         <HeaderNavItem to="/contact" isLast>
           <Button
             size="md"

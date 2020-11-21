@@ -14,7 +14,7 @@ const AboutCTA = () => (
         color="black"
         className="primary-button"
         size="lg"
-        to="/about"
+        to="/services"
       >
         Our Services
       </Button>
