@@ -11,8 +11,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import { customTheme } from "../util/theme"
 import { ChakraProvider } from "@chakra-ui/react"
 import Header from "./Headers/Header"
-import "./custom-styles.scss"
 import Footer from "./Footer/Footer"
+import Notification from "./Banners/Notification"
+import "./custom-styles.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,6 +36,10 @@ const Layout = ({ children }) => {
   return (
     <ChakraProvider theme={customTheme}>
       {/* TODO: Use ColorModeProvider to incorporate theme switcher */}
+      <Notification
+        linkTo="/coronavirus"
+        text="View Statement to Customers and Partners Regarding COVID-19"
+      />
       <Header
         siteTitle={data.site.siteMetadata.title}
         logo={data.logo.childImageSharp.fixed}

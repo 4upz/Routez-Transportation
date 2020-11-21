@@ -36,15 +36,17 @@ const Header = ({ siteTitle, logo }) => {
       <MobileToggle onClick={toggleMenu} />
       <HeaderNav shouldShow={show}>
         <HeaderNavItem to="/about">About Us</HeaderNavItem>
-        <HeaderNavItem to="/">Our Services</HeaderNavItem>
+        <HeaderNavItem to="/services">Our Services</HeaderNavItem>
         <HeaderNavItem to="/contact" isLast>
           <Button
+            className="primary-button"
             size="md"
             color="black"
             bg={["white", "white", "brand.500", "brand.500"]}
             _hover={{
               bg: ["brand.100", "brand.100", "brand.600", "brand.600"],
             }}
+            fontSize={18}
           >
             Contact Us
           </Button>

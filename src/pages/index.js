@@ -12,7 +12,11 @@ const IndexPage = () => (
     <Hero businessNumber="216-XXX-XXX" />
     <ServiceArea />
     <ReasonsToRide />
-    <CTABanner heading="Convinced Yet?" linkText="Get in Touch" />
+    <CTABanner
+      heading="Convinced Yet?"
+      linkText="Get in Touch"
+      linkTo="/contact"
+    />
   </Layout>
 )
 

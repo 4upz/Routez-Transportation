@@ -12,7 +12,7 @@ const CTABanner = ({ heading, linkText, linkTo }) => (
         color="black"
         className="primary-button"
         size="lg"
-        to="/contact"
+        to={linkTo}
       >
         {linkText}
       </Button>
