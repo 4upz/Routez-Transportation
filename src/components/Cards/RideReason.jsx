@@ -1,10 +1,12 @@
 import React from "react"
 import { Box, Center, Heading } from "@chakra-ui/react"
-import { Link as GatsbyLink } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const RideReason = ({ reason, bgImage }) => (
   <Box
-    as={GatsbyLink}
+    as={AniLink}
+    swipe
+    direction="left"
     className="reason-card"
     m={6}
     borderRadius="lg"

@@ -1,6 +1,6 @@
 import React from "react"
-import { Link as GatsbyLink } from "gatsby"
 import { Box, HStack, Button, Heading, Image } from "@chakra-ui/react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import illustration from "../../images/art/about.svg"
 
 const AboutCTA = () => (
@@ -9,7 +9,9 @@ const AboutCTA = () => (
     <Image src={illustration} mx="auto" my={6} w="80%" />
     <HStack my={6} py="30px" justify="center">
       <Button
-        as={GatsbyLink}
+        as={AniLink}
+        swipe
+        direction="left"
         colorScheme="brand"
         color="black"
         className="primary-button"
@@ -19,7 +21,9 @@ const AboutCTA = () => (
         Our Services
       </Button>
       <Button
-        as={GatsbyLink}
+        as={AniLink}
+        swipe
+        direction="left"
         backgroundColor="black"
         color="white"
         className="secondary-button"

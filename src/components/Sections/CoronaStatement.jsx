@@ -72,7 +72,7 @@ const CoronaStatement = () => (
       <Text fontSize={18} fontWeight="bold" w="100%">
         Business Continuity
       </Text>
-      <UnorderedList spacing={3} fontSize={18}>
+      <UnorderedList spacing={3} fontSize={18} listStylePos="inside">
         <ListItem>
           All of our transport vehicles are equipped with the supplies to ensure
           they remain fully operational if crisis emerge.

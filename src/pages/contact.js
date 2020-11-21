@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import ContactForm from "../components/Sections/ContactForm"
+import { Box } from "@chakra-ui/react"
 
 const ContactPage = () => (
-  <Layout>
+  <Box bg="#f4f7f5">
     <SEO title="Contact Us" />
     <ContactForm businessNumber="216-XXX-XXXX" />
-  </Layout>
+  </Box>
 )
 
 export default ContactPage

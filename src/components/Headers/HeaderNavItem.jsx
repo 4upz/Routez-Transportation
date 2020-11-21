@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { Text } from "@chakra-ui/react"
 
 const HeaderNavItem = ({ children, isLast, to }) => {
@@ -10,7 +10,9 @@ const HeaderNavItem = ({ children, isLast, to }) => {
       display="block"
       fontSize={18}
     >
-      <Link to={to}>{children}</Link>
+      <AniLink swipe direction="left" to={to}>
+        {children}
+      </AniLink>
     </Text>
   )
 }

@@ -8,7 +8,7 @@ const ServiceCard = ({
   hasColoredBackground,
   isReversed,
 }) => (
-  <Box bgColor={hasColoredBackground ? "brand.500" : "white"} py={12}>
+  <Box bgColor={hasColoredBackground ? "brand.500" : "#f4f7f5"} py={12}>
     <Flex
       flexDir={{ base: "column", md: isReversed ? "row-reverse" : "row" }}
       maxW={1200}

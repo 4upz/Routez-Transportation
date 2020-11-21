@@ -1,4 +1,3 @@
-import { Link as GatsbyLink } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
@@ -6,6 +5,7 @@ import { Button, Flex, Spacer } from "@chakra-ui/react"
 import MobileToggle from "./MobileToggle"
 import HeaderNav from "./HeaderNav"
 import HeaderNavItem from "./HeaderNavItem"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = ({ siteTitle, logo }) => {
   const [show, setShow] = React.useState(false)
@@ -28,9 +28,9 @@ const Header = ({ siteTitle, logo }) => {
       className="header-nav"
     >
       <Flex align="center">
-        <GatsbyLink to="/">
+        <AniLink swipe direction="left" to="/">
           <Img fixed={logo} alt={siteTitle} />
-        </GatsbyLink>
+        </AniLink>
       </Flex>
       <Spacer />
       <MobileToggle onClick={toggleMenu} />

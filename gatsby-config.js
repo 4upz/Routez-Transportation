@@ -23,9 +23,15 @@ module.exports = {
         short_name: `Routez`,
         start_url: `/`,
         background_color: `#f4f7f5`,
-        theme_color: `#ffd522`,
+        theme_color: `#f4f7f5`,
         display: `minimal-ui`,
         icon: `src/images/RTlogo.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-transition-link",
+      options: {
+        layout: require.resolve(`./src/components/Layout.jsx`),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

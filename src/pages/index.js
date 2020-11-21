@@ -1,13 +1,13 @@
 import React from "react"
-import Layout from "../components/Layout"
 import Hero from "../components/Hero/Hero"
 import SEO from "../components/Seo"
 import ServiceArea from "../components/Banners/ServiceArea"
 import ReasonsToRide from "../components/Sections/ReasonsToRide"
 import CTABanner from "../components/Banners/CTABanner"
+import { Box } from "@chakra-ui/react"
 
 const IndexPage = () => (
-  <Layout>
+  <Box bg="#f4f7f5">
     <SEO title="Home" />
     <Hero businessNumber="216-XXX-XXX" />
     <ServiceArea />
@@ -17,7 +17,7 @@ const IndexPage = () => (
       linkText="Get in Touch"
       linkTo="/contact"
     />
-  </Layout>
+  </Box>
 )
 
 export default IndexPage

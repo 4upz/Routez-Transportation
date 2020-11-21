@@ -2,8 +2,10 @@
 
 $gold: #ffd522;
 
-body {
-  background-color: #f4f7f5;
+html,
+body,
+main {
+  background-color: #f4f7f5 !important;
 }
 
 .header-nav a {

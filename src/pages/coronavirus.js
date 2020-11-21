@@ -1,13 +1,13 @@
+import { Box } from "@chakra-ui/react"
 import React from "react"
-import Layout from "../components/Layout"
 import CoronaStatement from "../components/Sections/CoronaStatement"
 import SEO from "../components/Seo"
 
 const ContactPage = () => (
-  <Layout>
+  <Box bg="#f4f7f5">
     <SEO title="Coronavirus" />
     <CoronaStatement />
-  </Layout>
+  </Box>
 )
 
 export default ContactPage

@@ -1,6 +1,6 @@
 import React from "react"
-import { Link as GatsbyLink } from "gatsby"
 import { Flex, Stack, Heading, Button, Link, Box } from "@chakra-ui/react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import heroImage from "../../images/art/hero-image.svg"
 
 const Hero = ({ businessNumber }) => {
@@ -46,7 +46,9 @@ const Hero = ({ businessNumber }) => {
           </Stack>
           <Stack isInline>
             <Button
-              as={GatsbyLink}
+              as={AniLink}
+              swipe
+              direction="left"
               colorScheme="brand"
               color="black"
               className="primary-button"
@@ -56,7 +58,9 @@ const Hero = ({ businessNumber }) => {
               Why Us?
             </Button>
             <Button
-              as={GatsbyLink}
+              as={AniLink}
+              swipe
+              direction="left"
               backgroundColor="black"
               color="white"
               className="secondary-button"

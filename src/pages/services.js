@@ -1,15 +1,14 @@
 import React from "react"
-import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import ServiceCard from "../components/Cards/ServiceCard"
 import medicalIllustration from "../images/art/medical.svg"
 import employmentIllustration from "../images/art/employment.svg"
 import centerIllustration from "../images/art/center.svg"
 import CTABanner from "../components/Banners/CTABanner"
-import { Heading } from "@chakra-ui/react"
+import { Box, Heading } from "@chakra-ui/react"
 
 const ServicesPage = () => (
-  <Layout>
+  <Box bg="#f4f7f5">
     <SEO title="Services" />
     <Heading as="h1" textAlign="center" mt={6}>
       Services We Offer
@@ -36,7 +35,7 @@ const ServicesPage = () => (
       linkText="Get in Touch"
       linkTo="/contact"
     />
-  </Layout>
+  </Box>
 )
 
 export default ServicesPage
