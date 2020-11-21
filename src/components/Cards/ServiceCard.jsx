@@ -17,7 +17,7 @@ const ServiceCard = ({
       justify="center"
       align="center"
     >
-      <Image src={image} w={{ base: "full", md: "50%" }} />
+      <Image src={image} w={{ base: "full", md: "60%" }} mx={6} />
       <VStack spacing={6} textAlign={{ base: "center", md: "left" }} p={6}>
         <Heading as="h2" fontSize={32} w="100%">
           {service}

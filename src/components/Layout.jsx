@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
       {/* TODO: Use ColorModeProvider to incorporate theme switcher */}
       <Notification
         linkTo="/coronavirus"
-        text="Click HERE to View Statement to Customers and Partners Regarding COVID-19"
+        text="View Statement to Customers and Partners Regarding COVID-19"
       />
       <Header
         siteTitle={data.site.siteMetadata.title}
