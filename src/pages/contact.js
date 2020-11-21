@@ -3,11 +3,11 @@ import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import ContactForm from "../components/Sections/ContactForm"
 
-const AboutPage = () => (
+const ContactPage = () => (
   <Layout>
     <SEO title="Contact Us" />
     <ContactForm businessNumber="216-XXX-XXXX" />
   </Layout>
 )
 
-export default AboutPage
+export default ContactPage

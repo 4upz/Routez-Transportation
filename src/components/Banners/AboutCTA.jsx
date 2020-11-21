@@ -7,7 +7,7 @@ const AboutCTA = () => (
   <Box maxW={1200} mx="auto" my={12} textAlign="center">
     <Heading>Have We Caught Your Attention?</Heading>
     <Image src={illustration} mx="auto" my={6} w="80%" />
-    <HStack my={6} justify="center">
+    <HStack my={6} py="30px" justify="center">
       <Button
         as={GatsbyLink}
         colorScheme="brand"
