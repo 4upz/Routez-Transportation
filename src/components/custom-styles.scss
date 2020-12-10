@@ -71,3 +71,13 @@ hr.divider {
   margin: auto !important;
   width: 70%;
 }
+
+.inline-link {
+  font-weight: bold;
+  text-decoration: underline;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: white;
+  }
+}
