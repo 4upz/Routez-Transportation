@@ -5,7 +5,6 @@ import {
   Image,
   VStack,
   Text,
-  Link,
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react"
@@ -36,14 +35,6 @@ const CoronaStatement = () => (
         employees, customers and partners and ensure business continuity can be
         found below.
       </Text>
-      <Link
-        fontSize={18}
-        w="100%"
-        color="brand.700"
-        href="https://www.digitalrealty.com/statement-from-our-ceo"
-      >
-        See statement from our CEO.
-      </Link>
     </VStack>
     <VStack spacing={6} my={6} p={6}>
       <Text fontSize={18} fontWeight="bold" w="100%">
