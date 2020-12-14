@@ -7,8 +7,8 @@ const ServiceArea = () => (
   <Box
     as="section"
     textAlign="center"
-    minH={350}
-    py={4}
+    minH={[600, 400]}
+    p={4}
     bgColor="brand.500"
     bgImage={`url(${backgroundImage})`}
     bgPos="bottom center"
@@ -17,7 +17,7 @@ const ServiceArea = () => (
     <Heading as="h2" maxW={1200} mx="auto">
       Servicing the Northeast Ohio Area
     </Heading>
-    <Text my={1} fontSize={18}>
+    <Text my={6} fontSize={18}>
       Routez Transportation Inc. strives to be your favorite neighborhood
       partner for all your transportation needs. <br /> To learn more about the
       Routez family, give us a call or explore our website and be sure to fill

@@ -7,31 +7,31 @@ const Hero = ({ businessNumber }) => {
   return (
     <Box className="home-hero">
       <Flex
-        justify={{ base: "center", md: "space-between" }}
-        align={{ base: "flex-end", md: "center" }}
+        justify={{ base: "center", lg: "space-between" }}
+        align={{ base: "flex-end", lg: "center" }}
         wrap="no-wrap"
         px={6}
         mx="auto"
-        minH={{ base: "none", md: "90vh" }}
+        minH={{ base: "none", lg: "90vh" }}
         maxW={1200}
         bg={`url(${heroImage})`}
-        bgPos={{ base: "center top", md: "center right" }}
+        bgPos={{ base: "center top", lg: "center right" }}
         bgRepeat="no-repeat"
-        bgSize={{ base: "300px 300px", md: "initial" }}
+        bgSize={{ base: "300px 300px", lg: "initial" }}
       >
         <Stack
           spacing={8}
-          mt={{ base: "300px", md: 0 }}
+          mt={{ base: "300px", lg: 0 }}
           mb={6}
           w={{ base: "full", lg: "40%" }}
-          align={["center", "center", "flex-start", "flex-start"]}
+          align={["center", "center", "center", "flex-start"]}
         >
           <Stack>
             <Heading
               as="h2"
               size="md"
               fontWeight="normal"
-              textAlign={["center", "center", "left", "left"]}
+              textAlign={["center", "center", "center", "left"]}
               color="gray.600"
             >
               Anytime. Any day.
@@ -39,7 +39,7 @@ const Hero = ({ businessNumber }) => {
             <Heading
               as="h1"
               size="2xl"
-              textAlign={["center", "center", "left", "left"]}
+              textAlign={["center", "center", "center", "left"]}
             >
               We'll Take You There!
             </Heading>
@@ -74,7 +74,7 @@ const Hero = ({ businessNumber }) => {
             fontSize={21}
             color="gray.600"
             href={`tel:${businessNumber}`}
-            textAlign={["center", "center", "left", "left"]}
+            textAlign={["center", "center", "center", "left"]}
           >
             Book a Ride: {businessNumber}
           </Link>
