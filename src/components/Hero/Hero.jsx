@@ -3,7 +3,7 @@ import { Flex, Stack, Heading, Button, Link, Box } from "@chakra-ui/react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import heroImage from "../../images/art/hero-image.svg"
 
-const Hero = ({ businessNumber }) => {
+const Hero = () => {
   return (
     <Box className="home-hero">
       <Flex
@@ -73,10 +73,10 @@ const Hero = ({ businessNumber }) => {
           <Link
             fontSize={21}
             color="gray.600"
-            href={`tel:${businessNumber}`}
+            href="tel:2163941302"
             textAlign={["center", "center", "center", "left"]}
           >
-            Book a Ride: {businessNumber}
+            Book a Ride: (216)-394-1302
           </Link>
         </Stack>
       </Flex>

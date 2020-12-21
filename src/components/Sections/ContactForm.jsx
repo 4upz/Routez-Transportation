@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react"
 import backgroundImage from "../../images/art/contact.svg"
 
-const ContactForm = ({ businessNumber }) => (
+const ContactForm = () => (
   <Flex
     justify="flex-end"
     maxW="1200px"
@@ -36,9 +36,9 @@ const ContactForm = ({ businessNumber }) => (
         borderWidth={1}
         borderColor="black"
         borderRadius="lg"
-        href={`tel:${businessNumber}`}
+        href="tel:2163941302"
       >
-        Call for a ride at: {businessNumber}
+        Call for a ride at: (216)-394-1302
       </Box>
       <Text textAlign={{ base: "center", md: "left" }}>
         Contact Routez Transportation, where our passengers and family are one

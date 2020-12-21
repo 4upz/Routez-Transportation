@@ -16,7 +16,9 @@ const Footer = () => (
         textAlign={{ base: "center", md: "left" }}
       >
         <Text>Routez Transportation</Text>
-        <Text>216-XXX-XXX</Text>
+        <Text>
+          <Link href="tel:2163941302">(216)-394-1302</Link>
+        </Text>
         <Link href="mailto:info@routeztransportation.com">
           info@routeztransportation.com
         </Link>

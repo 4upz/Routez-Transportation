@@ -6,7 +6,7 @@ import { Box } from "@chakra-ui/react"
 const ContactPage = () => (
   <Box bg="#f4f7f5">
     <SEO title="Contact Us" />
-    <ContactForm businessNumber="216-XXX-XXXX" />
+    <ContactForm />
   </Box>
 )
 
