@@ -9,7 +9,7 @@ import {
 
 const SocialLinks = ({ show }) => (
   <Box>
-    <Text textAlign={{ base: "center", md: "left" }}>Follow Us</Text>
+    <Text textAlign={["center", "center", "center", "left"]}>Follow Us</Text>
     <Flex
       display={{ sm: show ? "block" : "none", md: "flex" }}
       justifyContent="center"

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Routez Transportation`,
-    description: `Routez Transportation Service - A Black-owned transportation business located in Clevelad, Ohio.`,
+    description: `Routez Transportation Service - A Black-Owned transportation business located in Cleveland, Ohio.`,
     author: `@the4upz`,
   },
   plugins: [
